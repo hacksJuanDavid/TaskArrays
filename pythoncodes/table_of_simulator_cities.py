@@ -2,13 +2,13 @@ import random
 
 
 # Function to fill the inflation matrix with random decimal numbers
-def fill_inflation_matrix():
+def FillInFlationMatrix():
     matrix = [[round(random.random() * 10, 1) for _ in range(6)] for _ in range(5)]
     return matrix
 
 
 # Function to print inflation data as shown in Table 1
-def print_inflation_data(cities, matrix):
+def PrintInflationData(cities, matrix):
     print("+-------------+-------+---------+-------+-------+-------+-------+")
     print("| City        | January| February| March | April | May   | June  |")
     print("+-------------+-------+---------+-------+-------+-------+-------+")
@@ -21,13 +21,13 @@ def print_inflation_data(cities, matrix):
 
 
 # Function to calculate the average inflation for all cities for a given month
-def average_month(matrix, month):
+def AverageMonth(matrix, month):
     total = sum(matrix[i][month] for i in range(5))
     return total / 5
 
 
 # Function to calculate the average inflation for a city over the semester
-def average_city(cities, matrix, city):
+def AverageCity(cities, matrix, city):
     city_index = cities.index(city)
     total = sum(matrix[city_index])
     return total / 6
@@ -36,7 +36,7 @@ def average_city(cities, matrix, city):
 # Main program
 def main():
     cities = ["Cali", "Bogota", "Medellin", "Barranquilla", "Manizales"]
-    inflation_data = fill_inflation_matrix()
+    inflation_data = FillInFlationMatrix()
 
     while True:
         print("\nMenu:")
@@ -48,16 +48,16 @@ def main():
         option = int(input("Select an option: "))
 
         if option == 1:
-            print_inflation_data(cities, inflation_data)
+            PrintInflationData(cities, inflation_data)
         elif option == 2:
             month = int(input("Enter the month number (1-6): ")) - 1
             print(
-                f"The average inflation for all cities in month {month + 1} is: {average_month(inflation_data, month)}"
+                f"The average inflation for all cities in month {month + 1} is: {AverageMonth(inflation_data, month)}"
             )
         elif option == 3:
             city = input("Enter the city name: ")
             print(
-                f"The average inflation for the semester in {city} is: {average_city(cities,inflation_data, city)}"
+                f"The average inflation for the semester in {city} is: {AverageCity(cities,inflation_data, city)}"
             )
         elif option == 4:
             print("Goodbye!")
