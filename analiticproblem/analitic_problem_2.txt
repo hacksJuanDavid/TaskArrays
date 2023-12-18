@@ -1,0 +1,85 @@
+Análisis del Problema:
+
+Estructura del Código:
+
+    Función TableTeachersSales:
+        Toma dos listas como parámetros: Teachers (nombres de profesores) y Sales (ventas asociadas a cada profesor).
+        Imprime una tabla que muestra los nombres de los profesores y sus ventas correspondientes.
+        Utiliza el formato de cadena para imprimir la tabla.
+
+    Función TotalNominalSales:
+        Toma una lista de ventas (Sales) como parámetro.
+        Calcula la suma total de las ventas.
+        Imprime una tabla que muestra la suma total de las ventas.
+
+    Función AverageNominalSales:
+        Toma dos parámetros: Teachers (nombres de profesores) y Total (suma total de ventas).
+        Calcula el promedio de las ventas totales por profesor.
+        Imprime una tabla que muestra el promedio de las ventas.
+
+    Función NameTeacherSaleMajorMinor:
+        Toma dos listas como parámetros: Teachers (nombres de profesores) y Sales (ventas asociadas a cada profesor).
+        Encuentra los índices de la venta más alta (SaleMajor) y la venta más baja (SaleMinor).
+        Imprime una tabla que muestra los nombres de los profesores con las ventas más alta y más baja.
+
+    Función main:
+        Define dos listas: Teachers (nombres de profesores) y Sales (ventas asociadas a cada profesor).
+        Llama a las funciones definidas anteriormente para generar tablas y análisis de ventas.
+
+Variables de Entrada:
+
+    Teachers (lista): Nombres de los profesores.
+        Ejemplo: Teachers = ["Pedro", "María", ..., "Andres"]
+
+    Sales (lista): Ventas asociadas a cada profesor.
+        Ejemplo: Sales = [1565348, 2300000, ..., 2900000]
+
+Variables de Salida:
+
+    Tabla de Profesores y Ventas:
+        Muestra los nombres de los profesores y las ventas asociadas en una tabla.
+
+    Tabla de Ventas Totales:
+        Muestra la suma total de todas las ventas.
+
+    Tabla de Promedio de Ventas:
+        Muestra el promedio de ventas por profesor.
+
+    Tabla de Profesor con Venta más Alta y más Baja:
+        Muestra los nombres de los profesores con las ventas más alta y más baja.
+
+Proceso:
+
+    Presentación de Datos:
+        Se imprimen tablas que presentan información sobre profesores, ventas totales, promedio de ventas, y profesores con las ventas más alta y más baja.
+
+    Cálculos Estadísticos:
+        Se calcula la suma total de ventas y el promedio de ventas.
+
+    Identificación de Ventas Extremas:
+        Se identifican los profesores con las ventas más alta y más baja.
+
+Mejoras Posibles:
+
+    Manejo de Formato de Números:
+        Podría mejorarse el formato de los números en las tablas para hacerlo más legible, por ejemplo, utilizando separadores de miles.
+
+    Manejo de Errores:
+        Se podría agregar validación para asegurarse de que las listas Teachers y Sales tengan la misma longitud.
+
+    Interfaz de Usuario:
+        Considerar la posibilidad de interactuar con el usuario para ingresar datos o realizar selecciones.
+
+    Documentación:
+        Agregar comentarios y documentación al código para facilitar la comprensión y el mantenimiento a largo plazo.
+
+Ejemplo de Uso:
+
+python
+
+# Variables de Entrada
+Teachers = ["Pedro", "María", "Juan", "Martha", "Johanna", "Tomas", "Pedro", "Claudia", "Diego", "Andres"]
+Sales = [1565348, 2300000, 2287945, 5454670, 4835678, 5643568, 2745345, 4345667, 2843200, 2900000]
+
+# Llamada a la Función Principal
+main()

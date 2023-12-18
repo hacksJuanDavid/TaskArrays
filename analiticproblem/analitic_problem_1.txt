@@ -1,0 +1,59 @@
+Análisis del Problema:
+
+Variables de Entrada:
+
+    times (lista): Una lista que contiene los tiempos de los ciclistas en la carrera.
+        Ejemplo: times = [7747, 7746, 7752, 7758, 7756, 7760, 7762, 7763, 7765, 7766]
+
+    bikers (lista): Una lista que contiene los nombres de los ciclistas.
+        Ejemplo: bikers = ["Egal Bernan", "Remco Evenepoel", ..., "Jonathan Castroviejo"]
+
+Variables de Salida:
+
+    Tabla de Clasificación (Impresión en Consola):
+        La tabla muestra la clasificación de los ciclistas con respecto a sus tiempos en la carrera, incluyendo el ID, nombre, tiempo total y diferencia de tiempo con respecto al ciclista anterior.
+
+Proceso:
+
+    Ordenamiento por Tiempo:
+        Los datos se ordenan en base a los tiempos de los ciclistas en orden ascendente.
+
+    Cálculo de Diferencia de Tiempo:
+        Se calcula la diferencia de tiempo entre un ciclista y el anterior en la clasificación. La diferencia se presenta en horas, minutos y segundos.
+
+    Impresión de la Tabla:
+        Se imprime una tabla bien formateada que muestra el ID, nombre del ciclista, tiempo en la carrera y diferencia de tiempo.
+
+Mejoras Propuestas:
+
+    Manejo de Errores:
+        Validar que las listas times y bikers tengan la misma longitud para evitar errores de índice.
+
+    Flexibilidad en el Formato de Tiempo:
+        Hacer el código más flexible para manejar diferentes formatos de tiempo o unidades de tiempo.
+
+    Interfaz de Usuario Interactiva:
+        Proporcionar la opción de ingresar manualmente los tiempos y nombres de los ciclistas para una mayor versatilidad.
+
+    Documentación y Comentarios:
+        Agregar comentarios y documentación en el código para mejorar la comprensión y mantenimiento.
+
+Ejemplo de Uso:
+
+python
+
+# Variables de Entrada
+times = [7747, 7746, 7752, 7758, 7756, 7760, 7762, 7763, 7765, 7766]
+bikers = ["Egal Bernan", "Remco Evenepoel", ..., "Jonathan Castroviejo"]
+
+# Llamada a la Función de Clasificación
+TableClasificationCarrer(times, bikers)
+
+Resultado Esperado (Consola):
+Classification of the Carrer
+| ID    | Biker                | Time                | Time Difference      |
+|----------------------------|---------------------|----------------------|----------------------|
+| 1     | Egal Bernan          | 2h 9m 7s            | -                    |
+| 2     | Remco Evenepoel      | 2h 9m 6s            |  0h 0m 1s            |
+| ...   | ...                  | ...                 | ...                  |
+| 10    | Jonathan Castroviejo | 2h 9m 26s           |  0h 0m 20s  

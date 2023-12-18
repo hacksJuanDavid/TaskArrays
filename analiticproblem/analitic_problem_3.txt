@@ -1,0 +1,69 @@
+Análisis del Problema:
+
+Estructura del Código:
+
+    Función fill_inflation_matrix:
+        Crea una matriz de inflación (5x6) con números decimales aleatorios entre 0 y 10.
+        Retorna la matriz generada.
+
+    Función print_inflation_data:
+        Imprime los datos de inflación en formato de tabla para las ciudades y los meses.
+        Utiliza una matriz de inflación y una lista de nombres de ciudades como entrada.
+
+    Función average_month:
+        Calcula el promedio de la inflación para todas las ciudades en un mes específico.
+        Recibe una matriz de inflación y el índice del mes como entrada.
+
+    Función average_city:
+        Calcula el promedio de la inflación para una ciudad específica durante todo el semestre.
+        Recibe una lista de ciudades, una matriz de inflación y el nombre de la ciudad como entrada.
+
+    Función main:
+        Define una lista de ciudades y obtiene una matriz de inflación aleatoria.
+        Implementa un bucle que presenta un menú interactivo al usuario.
+        El menú permite mostrar datos de inflación, calcular el promedio de inflación por mes, calcular el promedio de inflación por ciudad y salir del programa.
+
+Variables de Entrada:
+
+    cities (lista): Nombres de las ciudades para las cuales se registran los datos de inflación.
+        Ejemplo: cities = ["Cali", "Bogota", "Medellin", "Barranquilla", "Manizales"]
+
+    inflation_data (matriz): Datos de inflación para las ciudades y meses.
+        Ejemplo: inflation_data = [[5.1, 2.3, 6.7, 8.9, 4.5, 1.2], [...], [...], [...], [...]]
+
+Variables de Salida:
+
+    Resultados Interactivos del Menú:
+        Despliega información en la consola según las opciones seleccionadas por el usuario.
+
+Proceso:
+
+    Generación de Datos Aleatorios:
+        La matriz de inflación se llena con números decimales aleatorios.
+
+    Interacción con el Usuario:
+        Se presenta un menú interactivo que permite al usuario seleccionar diversas opciones relacionadas con los datos de inflación.
+
+    Cálculos Estadísticos:
+        Se calculan promedios de inflación por mes y por ciudad según las opciones seleccionadas por el usuario.
+
+Mejoras Posibles:
+
+    Manejo de Errores:
+        Agregar validación para manejar entradas no válidas del usuario (por ejemplo, letras en lugar de números).
+
+    Mejor Presentación Gráfica:
+        Mejorar la presentación de los datos en la consola para que sea más legible y amigable.
+
+    Flexibilidad en la Entrada del Usuario:
+        Permitir al usuario seleccionar un rango de meses para calcular promedios mensuales en lugar de uno a la vez.
+
+    Documentación:
+        Agregar comentarios y documentación al código para facilitar la comprensión y el mantenimiento.
+
+Ejemplo de Uso:
+
+python
+
+# Llamada a la Función Principal
+main()
