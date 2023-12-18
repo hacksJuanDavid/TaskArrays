@@ -41,6 +41,7 @@ competencia, Como se muestra a continuación
 
 ## Table of classification
 
+```
 +----+-----------------------------+--------+
 | Pos| Ciclista | Tiempo |
 +----+-----------------------------+--------+
@@ -55,6 +56,7 @@ competencia, Como se muestra a continuación
 | 9 | Frederik Backaert | a 19.00s |
 | 10 | Jonathan Castroviejo Nicolás | a 20.00s |
 +----+-----------------------------+--------+
+```
 
 Suponga que siempre hay 10 competidores en la competencia. El programa primero debe leer el nombre
 del ciclista, seguido del tiempo tomado en la prueba. Después de leer los datos de los 10 ciclistas se debe
@@ -92,6 +94,7 @@ de menor salario.
 
 ## Matrix
 
+```
 +-------------+-------+-------+-------+-------+-------+-------+
 | Ciudad | Enero | Febrero | Marzo | Abril | Mayo | Junio |
 +-------------+-------+---------+-------+-------+-------+-------+
@@ -102,6 +105,8 @@ de menor salario.
 | Manizales | 5.9 | 5.4 | 3.2 | 5.0 | 4.5 | 2.5 |
 +-------------+-------+-------+-------+-------+-------+-------+
 
+```
+
 Tabla 1. Inflación mensual
 Se requiere un programa en Python para simular el registro de inflaciones mensuales de las ciudades, el
 programa debe cumplir los siguientes requerimientos.
@@ -111,9 +116,12 @@ decimales entre 0.0 y 10. Cada posición de la matriz representa la inflación d
 determinado mes. Para generar números aleatorios en Python se debe importar la librería
 random. El siguiente código generara números aleatorios.
 
+```
 import random
 x=round((random.random() \* 10), 1)
 print (x)
+
+```
 
 La función random () generar número aleatorios entre 0.0 y 1.0 En el ejemplo anterior se
 multiplica este número por 10. Además se usa la función round() para redondear el
